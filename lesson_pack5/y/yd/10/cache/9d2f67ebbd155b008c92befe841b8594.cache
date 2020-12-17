@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>アンドゴルフ海浜幕張スタジオ：体験レッスンキャンペーン実施中！</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+
+	<link rel="stylesheet" type="text/css" media="all" href="css/config.css"/><link rel="stylesheet" type="text/css" media="all" href="css/pc.css"/><link rel="stylesheet" type="text/css" media="all" href="css/tb.css"/><link rel="stylesheet" type="text/css" media="all" href="css/sp.css"/>
+	<link rel="stylesheet" type="text/css" media="all" href="css/swiper.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.ico"/><link rel="apple-touch-icon-precomposed" href="img/apple_touch_icon.jpg"/>
+</head>
+
+<body class="container">
+
+<!--HEADER-->
+<header>
+    <div class="cts">
+        <div class="logos">
+            <div class="symbol"><img src="img/symbol.png" alt=""></div>
+            <div class="logo"><img src="img/logo.png" alt=""></div>
+        </div><!--logos-->
+        <div class="tel"><img src="img/header_tel.png" alt=""></div>
+    </div><!--cts-->
+</header>
+
+
+
+<!--RESERVATION-->
+<div class="form_mv">
+    <div class="cts">
+        <div class="photo_l inviewfadeInLeft"><img src="img/form_mv_p1.png" alt=""></div>
+        <div class="photo_r inviewfadeInRight"><img src="img/form_mv_p2.png" alt=""></div>
+        <div class="icon inviewfadeInUp"><img src="img/form_mv_icon.png" alt=""></div>
+        <div class="pc"><div class="sub_title"><p>1.3万人から選ばれる<span class="fy">No.1スイング改造プログラム</span></p></div></div>
+        <div class="mv_sp"><div class="sub_title"><p>1.3万人から選ばれる<br><span class="fy">No.1スイング改造プログラム</span></p></div></div>
+        <div class="tb"><div class="sub_title"><p>1.3万人から選ばれる<span class="fy">No.1スイング改造プログラム</span></p></div></div>
+    </div><!--cts-->
+    <div class="titles">
+        <div class="arrow inviewfadeInDown"><img src="img/form_title_arrow.png" alt=""></div>
+        <div class="title"><img src="img/form_mv_title.png" alt=""></div>
+        <div class="arrow inviewfadeInDown"><img src="img/form_title_arrow.png" alt=""></div>
+    </div><!--titles-->
+</div><!--form_mv-->
+
+
+
+<!--FORM-->
+<div id="reservation">
+    <div class="symbol_and"><img src="img/symbol_and.png" alt=""></div>
+    <div class="cts">
+        <div class="titles">
+            <p class="sub_copy">And Golf体験レッスン</p>
+            <h2>予約フォーム</h2>
+            <div class="title_line inviewfadeInLine"></div>
+        </div><!--titles-->
+        
+        
+        <!--FORM-->
+        <form action="<?php echo $next_url; ?>" method="post">
+            <div class="forms">
+                
+                <?php if(count($errors) > 0) : ?>
+                <ul>
+                    <?php foreach($errors as $key => $val) : ?>
+                    <li><?php echo $val; ?></li>
+                    <?php endforeach; ?>
+                </ul>
+                <?php endif; ?>
+
+                <div class="form">
+                    <p class="item"><span>体験レッスン<br class="pc">希望日時<span class="required">必須</span></span></p>
+                    <div class="contents">
+                        <div class="content">
+                            <p class="annotation">第一希望</p>
+                            <div class="date"><input type="date" name="date1" class="style_date" min="<?php echo $today; ?>" max="<?php echo $twoweekafter; ?>" value="<?php echo $datas->date1->value; ?>"></div>
+                            <div class="time">
+                                <select name="time1" class="style_time">
+                                    <option value="">時間を選択</option>
+                                    <?php for($i=0; $i<count($datas->time1->select_vals); $i++): ?>
+                                    <option value="<?php echo $datas->time1->select_vals[$i]; ?>" <?php echo $datas->time1->select_selected[$i]; ?>><?php echo $datas->time1->select_vals[$i]; ?></option>
+                                    <?php endfor; ?>
+                                </select>
+                            </div><!--time-->
+                            <div class="warning" id="kibou1_error"></div>
+                        </div><!--content-->
+                        
+                        <div class="content">
+                            <p class="annotation">第二希望</p>
+                            <div class="date"><input type="date" name="date2" class="style_date" min="<?php echo $today; ?>" max="<?php echo $twoweekafter; ?>" value="<?php echo $datas->date2->value; ?>"></div>
+                            <div class="time">
+                                <select name="time2" class="style_time">
+                                    <option value="">時間を選択</option>
+                                    <?php for($i=0; $i<count($datas->time2->select_vals); $i++): ?>
+                                    <option value="<?php echo $datas->time2->select_vals[$i]; ?>" <?php echo $datas->time2->select_selected[$i]; ?>><?php echo $datas->time2->select_vals[$i]; ?></option>
+                                    <?php endfor; ?>
+                                </select>
+                            </div><!--time-->
+                            <div class="warning" id="kibou2_error"></div>
+                        </div><!--content-->
+                        
+                        <div class="content">
+                            <p class="annotation">第三希望</p>
+                            <div class="date"><input type="date" name="date3" class="style_date" min="<?php echo $today; ?>" max="<?php echo $twoweekafter; ?>" value="<?php echo $datas->date3->value; ?>"></div>
+                            <div class="time">
+                                <select name="time3" class="style_time">
+                                    <option value="">時間を選択</option>
+                                    <?php for($i=0; $i<count($datas->time3->select_vals); $i++): ?>
+                                    <option value="<?php echo $datas->time3->select_vals[$i]; ?>" <?php echo $datas->time3->select_selected[$i]; ?>><?php echo $datas->time3->select_vals[$i]; ?></option>
+                                    <?php endfor; ?>
+                                </select>
+                            </div><!--time-->
+                            <div class="warning" id="kibou3_error"></div>
+                        </div><!--content-->
+                    </div><!--contents-->
+                </div><!--form-->
+                
+                <div class="form">
+                    <p class="item"><span>氏名<span class="required">必須</span></span></p>
+                    <div class="contents">
+                        <input type="text" name="name" class="style_name" placeholder="お名前を入力" value="<?php echo $datas->name->value; ?>">
+                        <div class="warning"></div>
+                    </div><!--contents-->
+                </div><!--form-->
+                
+                <div class="form">
+                    <p class="item"><span>電話番号<span class="required">必須</span></span></p>
+                    <div class="contents">
+                        <input type="text" name="tel" class="style_tel" placeholder="電話番号を入力" value="<?php echo $datas->tel->value; ?>">
+                        <div class="warning"></div>
+                    </div><!--contents-->
+                </div><!--form-->
+                
+                <div class="form">
+                    <p class="item"><span>メールアドレス<span class="required">必須</span></span></p>
+                    <div class="contents">
+                        <input type="text" name="email" class="style_mail" placeholder="メールアドレスを入力" value="<?php echo $datas->email->value; ?>">
+                        <div class="warning"></div>
+                    </div><!--contents-->
+                </div><!--form-->
+                
+                <div class="form">
+                    <p class="item"><span>現在のお悩み<span class="any">任意</span></span></p>
+                    <div class="contents">
+                        <textarea name="comment" class="style_worry" placeholder="スイングに関するお悩みや、現在の平均スコア、得意苦手クラブ等も合わせてご記入ください"><?php echo $datas->comment->value; ?></textarea>
+                        <div class="warning"></div>
+                    </div><!--contents-->
+                </div><!--form-->
+                
+                <p class="attention">※体験レッスン代金500円は当日決済となります。</p>
+                <div class="btns">
+                    <button class="submit">内容を送信する</button>
+                </div><!--btns-->
+
+            </div><!--forms-->
+        </form>
+        
+    </div><!--cts-->
+    
+    
+    <!--FOOTER-->
+    <footer class="under">
+        <div class="links">
+            <a href="../../tokusyo_pp/row.html">特定商取引法に基づく表示</a> ｜ <a href="../../tokusyo_pp/pp.html">プライバシーポリシー</a>
+        </div><!--links-->
+        <p class="copyright">Copyright&copy;<script>new Date().getFullYear()>2010&&document.write(+new Date().getFullYear());</script>. And Golf. <br class="sp">All Rights Reserved.</p>
+    </footer>
+    
+</div><!--reservation-->
+
+
+
+<!--JS-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/swiper_trigger.js"></script>
+<script src="js/default.js"></script>
+<script src="js/jquery.inview.js"></script>
+<script src="js/inview_trigger.js"></script>
+
+<!--LibForm JS-->
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/additional-methods.min.js"></script>
+<script src="?p=v"></script>
+
+</body>
+</html>

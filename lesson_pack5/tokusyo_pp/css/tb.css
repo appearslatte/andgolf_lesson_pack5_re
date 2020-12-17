@@ -1,0 +1,732 @@
+@charset "utf-8";
+
+/* ==================================================
+Common CSS
+================================================== */
+
+@media(min-width:768px) and (max-width:999px) {
+
+/*STYLE*/
+.container {
+overflow-x:hidden;
+}
+
+.pc {
+display:none;
+}
+
+.sptb {
+display:none;
+}
+
+.mv_sp {
+display:none;
+}
+
+p , th , td {
+font-size:110%;
+line-height:160%;
+letter-spacing:0.5px;
+}
+
+img {
+width:100%;
+height:auto;
+}
+
+.cts {
+width:80%;
+margin:auto;
+}
+
+.next {
+width:50px;
+position:absolute;
+bottom:-35px;
+left:0;
+right:0;
+margin:auto;
+z-index:1;
+}
+
+.next a:hover {
+opacity:0.7;
+}
+
+h2 {
+font-size:170%;
+font-weight:normal;
+line-height:135%;
+text-align:center;
+padding-bottom:15px;
+}
+
+.detail p {
+padding-bottom:20px;
+letter-spacing:1px;
+line-height:160%;
+}
+
+.detail p:last-child {
+padding-bottom:0;
+}
+
+.font {
+font-family: 'Oswald', sans-serif;
+line-height:100%;
+}
+
+.min {
+font-family: "Sawarabi Mincho";
+}
+
+
+
+/*HEADER*/
+header {
+width:100%;
+background:rgba(255,255,255,0.9);
+}
+
+header .cts {
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 0;
+}
+
+header .cts .logos {
+display:flex;
+align-items:center;
+}
+
+header .cts .logos .symbol {
+width:40px;
+margin-right:10px;
+}
+
+header .cts .logos .logo {
+width:200px;
+}
+
+header .cts .tel {
+width:180px;
+display:none;
+}
+
+
+
+/*ROW*/
+#terms {
+background:url(../img/form_bg.png);
+padding:40px 0 0;
+}
+
+#terms .cts {
+}
+
+#terms .titles {
+padding-bottom:30px;
+}
+
+#terms .titles h2 {
+font-size:160%;
+padding-bottom:10px;
+}
+
+#terms .titles .title_line {
+height:3px;
+background:#b49632;
+margin:0 auto;
+}
+
+#terms .rows {
+padding-bottom:0;
+}
+
+#terms .rows .row {
+background:#fff;
+margin-bottom:20px;
+background:#00704b;
+}
+
+#terms .rows .row .item {
+width:100%;
+text-align:center;
+color:#fff;
+padding:7px 20px;
+font-size:100%;
+}
+
+#terms .rows .row .detail {
+width:100%;
+padding:10px 20px 20px;
+font-size:100%;
+background:#fff;
+}
+
+#terms .rows .row .detail .text p {
+font-size:100%;
+}
+
+#terms .rows .row .detail .attentions {
+padding-top:10px;
+}
+
+#terms .rows .row .detail .attentions .attention {
+font-size:70%;
+padding-bottom:0;
+}
+
+#terms .privacies {
+padding-bottom:20px;
+}
+
+#terms .privacies .privacy {
+border-bottom:#ccc 1px solid;
+padding-bottom:20px;
+margin-bottom:20px;
+}
+
+#terms .privacies .privacy:last-child {
+margin-bottom:0;
+}
+
+#terms .privacies .privacy .item {
+font-size:100%;
+font-weight:bold;
+color:#00704b;
+}
+
+#terms .privacies .privacy .detail {
+font-size:100%;
+}
+
+#terms .privacies .privacy .details p {
+font-size:100%;
+}
+
+
+/*RESERVATION*/
+#reservation {
+background:url(../img/form_bg.png);
+padding:65px 0 0;
+position:relative;
+}
+
+#reservation .symbol_and {
+position:absolute;
+z-index:0;
+top:30px;
+left:0;
+right:0;
+margin:auto;
+opacity:0.1;
+width:150px;
+}
+
+#reservation .cts {
+width:80%;
+}
+
+#reservation .titles {
+text-align:center;
+padding-bottom:50px;
+position:relative;
+}
+
+#reservation .titles .icon {
+width:80px;
+margin:0 auto 30px;
+}
+
+#reservation .titles .sub_copy {
+}
+
+#reservation .titles h2 {
+padding-bottom:10px;
+}
+
+#reservation .titles .title_line {
+height:3px;
+background:#e50012;
+margin:0 auto;
+}
+
+#reservation .confirmation_message {
+font-size:100%;
+text-align:center;
+padding-bottom:20px;
+}
+
+#reservation .forms {
+}
+
+#reservation .forms .form {
+margin-bottom:20px;
+}
+
+#reservation .forms .form .item {
+width:100%;
+background:#00704b;
+color:#fff;
+padding:10px 20px;
+display:flex;
+justify-content:flex-start;
+align-items:center;
+font-size:110%;
+}
+
+#reservation .forms .form .item .required {
+background:#e50012;
+font-size:60%;
+margin-left:10px;
+padding:3px 5px;
+}
+
+#reservation .forms .form .item .any {
+background:#aaa;
+font-size:60%;
+margin-left:10px;
+padding:3px 5px;
+}
+
+#reservation .forms .form .contents {
+width:100%;
+background:#fff;
+padding:30px 30px 25px;
+}
+
+#reservation .forms .form .contents .content {
+font-size:100%;
+margin-bottom:15px;
+}
+
+#reservation .forms .form .contents .content:last-child {
+margin-bottom:0;
+}
+
+#reservation .forms .form .contents .content .annotation {
+font-size:110%;
+padding-bottom:5px;
+}
+
+#reservation .forms .form .contents .content .date {
+padding-bottom:10px;
+font-size:100%;
+}
+
+#reservation .forms .form .contents .content .time {
+font-size:100%;
+line-height:100%;
+}
+
+#reservation .forms .form .contents .content .style_date {
+width:70%;
+height:40px;
+padding:0 15px;
+}
+
+#reservation .forms .form .contents .content .style_time {
+width:70%;
+height:40px;
+padding:0 15px;
+}
+
+#reservation .forms .form .contents .style_name {
+width:100%;
+padding:15px;
+}
+
+#reservation .forms .form .contents .style_tel {
+width:100%;
+padding:15px;
+}
+
+#reservation .forms .form .contents .style_mail {
+width:100%;
+padding:15px;
+}
+
+#reservation .forms .form .contents .style_worry {
+width:100%;
+height:200px;
+padding:15px;
+}
+
+#reservation .forms .btns {
+display:flex;
+justify-content:center;
+padding-top:0;
+}
+
+#reservation .forms .btns .submit {
+background:#e50012;
+border:none;
+color:#fff;
+cursor:pointer;
+font-weight:bold;
+font-size:100%;
+padding:10px 15px;
+height:50px;
+}
+
+#reservation .forms .btns .submit:hover {
+opacity:0.7;
+}
+
+#reservation .forms .btns .prev {
+background:#aaa;
+border:none;
+border-radius:0;
+color:#fff;
+cursor:pointer;
+font-weight:bold;
+font-size:100%;
+margin-right:10px;
+padding:10px 15px;
+height:50px;
+}
+
+#reservation .forms .btns .prev:hover {
+opacity:0.7;
+}
+
+#reservation .forms .warning {
+color:#e50012;
+font-size:90%;
+}
+
+#reservation .forms .form:nth-child(2) .warning,
+#reservation .forms .form:nth-child(3) .warning,
+#reservation .forms .form:nth-child(4) .warning,
+#reservation .forms .form:nth-child(5) .warning
+{
+padding-top:7px;
+}
+
+#kibou1_error.warning,
+#kibou2_error.warning,
+#kibou3_error.warning
+{
+margin-top:7px;
+}
+
+#reservation footer {
+padding-top:30px;
+}
+
+#reservation.finish {
+padding-top:30px;
+}
+
+#reservation .forms .attention {
+font-size:80%;
+color:#e50012;
+text-align:center;
+padding-bottom:15px;
+}
+
+
+
+/*THANKS*/
+#thanks {
+}
+
+#thanks h3 {
+background:#32aa32;
+color:#fff;
+font-size:135%;
+text-align:center;
+padding:10px;
+margin-bottom:15px;
+}
+
+#thanks .copy {
+text-align:left;
+padding-bottom:30px;
+}
+
+#thanks .wait {
+background:#fff;
+padding:35px 35px 35px;
+margin-bottom:40px;
+}
+
+#thanks .wait .mail {
+width:50px;
+margin:0 auto 10px;
+}
+
+#thanks .wait h4 {
+font-size:135%;
+text-align:center;
+padding-bottom:15px;
+color:#e50012;
+text-decoration:underline;
+}
+
+#thanks .if_title {
+font-size:135%;
+font-weight:bold;
+text-align:center;
+padding-bottom:15px;
+}
+
+#thanks .mistakes {
+padding-bottom:30px;
+}
+
+#thanks .mistakes .mistake {
+background:#fff;
+width:100%;
+padding:35px 35px 35px;
+margin-bottom:25px;
+}
+
+#thanks .mistakes .mistake .number {
+color:#c8aa46;
+font-size:380%;
+text-align:center;
+padding-bottom:10px;
+}
+
+#thanks .mistakes .mistake .item {
+font-size:125%;
+font-weight:bold;
+text-align:center;
+padding-bottom:10px;
+line-height:135%;
+}
+
+#thanks .mistakes .mistake .detail p {
+font-size:100%;
+}
+
+#thanks .contacts {
+border:#00704b 3px solid;
+background:#fff;
+padding:35px 35px 35px;
+}
+
+#thanks .contacts .contact {
+text-align:center;
+}
+
+#thanks .contacts .contact .item {
+padding-bottom:15px;
+}
+
+#thanks .contacts .contact .sub_item {
+font-weight:bold;
+}
+
+#thanks .contacts .contact .tels {
+display:flex;
+align-items:center;
+justify-content:center;
+padding-bottom:15px;
+}
+
+#thanks .contacts .contact .tels .free_dial {
+width:36px;
+margin-right:10px;
+}
+
+#thanks .contacts .contact .tels .tel {
+font-size:200%;
+font-weight:bold;
+color:#e50012;
+line-height:100%;
+}
+
+#thanks .contacts .contact .office {
+font-size:100%;
+padding-bottom:20px;
+}
+
+#thanks .contacts .contact .office a {
+color:#00704b;
+}
+
+#thanks .contacts .symbol {
+width:30%;
+margin:auto;
+}
+
+
+/*FIXED CTA*/
+.fixed_cta {
+position:fixed;
+bottom:0;
+right:-184px;
+width:184px;
+transition:0.7s;
+display:none;
+}
+
+.cta_on {
+right:0;
+}
+
+
+/*BACK TO TOP*/
+.BackToTop {
+position:fixed;
+width:40px;
+height:40px;
+right:20px;
+bottom:20px;
+z-index:100;
+display:none;
+}
+
+.BackToTop:hover {
+opacity:0.7;
+}
+
+
+
+/*ANIMATION*/
+.sns {
+-webkit-animation:appears 1s ease;
+animation:appears 1s ease;
+}
+
+@keyframes appears {
+0%{transform:translateX(100%);}
+100%{transform:translateX(0);}
+}
+
+
+
+/*INVIEW*/
+.inviewfadeInLine {
+width:0;
+transition:0.5s ease;
+}
+
+.fadeInLine {
+width:70px;
+transform:translate(0, 0);
+}
+
+.inviewfadeInUp {
+opacity:0;
+transform:translate(0,15%);
+transition:0.5s ease;
+}
+
+.fadeInUp {
+opacity:1;
+transform:translate(0, 0);
+}
+
+.inviewfadeInRight {
+opacity:0;
+transform:translate(15%,0);
+transition:0.5s ease;
+}
+
+.fadeInRight {
+opacity:1;
+transform:translate(0, 0);
+}
+
+.inviewfadeInDown {
+opacity:0;
+transform:translate(0,-15%);
+transition:0.5s ease;
+}
+
+.fadeInDown {
+opacity:1;
+transform:translate(0, 0);
+}
+
+.inviewfadeInLeft {
+opacity:0;
+transform:translate(-15%,0);
+transition:0.5s ease;
+}
+
+.fadeInLeft {
+opacity:1;
+transform:translate(0, 0);
+}
+
+.inviewFixedCta {
+right:-100%;
+}
+
+
+
+/*LINKS*/
+#links {
+width:100%;
+margin:100px auto 15px;
+}
+
+#links .navs {
+display:flex;
+justify-content:center;
+}
+
+#links .navs nav {
+}
+
+#links .navs nav:before {
+content:"　｜　";
+color:#e1e1e1;
+}
+
+#links .navs nav:first-child:before {
+content:"";
+}
+
+#links .navs nav a {
+text-decoration:none;
+font-weight:normal;
+color:#000;
+font-size:80%;
+}
+
+#links .navs nav a:hover {
+text-decoration:underline;
+opacity:0.8;
+}
+
+
+
+/*FOOTER*/
+footer {
+padding-bottom:120px;
+text-align:center;
+}
+
+footer.under {
+padding-bottom:15px;
+}
+
+footer .links {
+padding-bottom:20px;
+color:#ccc;
+}
+
+footer .links a {
+font-size:80%;
+color:#00704b;
+}
+
+footer .links a:hover {
+opacity:0.7;
+}
+
+footer .copyright {
+font-size:80%;
+color:#aaa;
+}
+
+
+
+}

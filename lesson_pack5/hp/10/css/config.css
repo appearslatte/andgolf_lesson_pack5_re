@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+body {
+font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP",'Roboto',"ヒラギノ角ゴ ProN","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","游ゴシック体",Yu Gothic,YuGothic,"游ゴシック Medium","Yu Gothic Medium","メイリオ", Meiryo,"Helvetica Neue", HelveticaNeue, Helvetica,Arial,"Segoe UI",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+margin:0;
+padding:0;
+color:#000;
+font-size:100%;
+background:#fff;
+overflow-x:hidden;
+}
+
+div,p,article,section,nav,ul,li,header,footer,input,h1,h2,h3,h4,h5,th,td {
+padding:0;
+margin:0;
+word-wrap:break-word;
+}
+
+*, *:before, *:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-o-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+img {
+padding:0;
+margin:0;
+vertical-align:bottom;
+border-style:none;
+}
+
+.cf:after { content:" "; display:block; clear:both; }
+.flex { display:flex; }
+.b {font-weight:bold;}
+
+li { list-style:none; }
+
+a:link {
+font-weight:normal;
+text-decoration:none;
+}
+a:visited {
+font-weight:normal;
+text-decoration:none;
+}
+a:hover {
+font-weight:normal;
+text-decoration:none;
+}
+
+.fr {color:#e50012;}
+.fy {color:#f5e100;}
+.fb {color:#003cb4;}
+.fg {color:#c8aa46;}
+.fe {color:#00704b;}
+
+.fll {font-size:160%;}
+.fl {font-size:120%;}
+.fs {font-size:80%;}
+.u {text-decoration:underline;}
+.c {text-align:center;}
+
+
+/*FORM*/
+input , select , textarea , button {
+-webkit-appearance:none;
+-ms-appearance:none;
+-moz-appearance:none;
+-o-appearance:none;
+appearance:none;
+outline:none;
+box-shadow:none;
+border:#ccc 1px solid;
+font-size:100%;
+}
+
+input:focus , textarea:focus , button:focus {
+border:#e50012 1px solid;
+}
+
+input[type="button"]:hover , input[type="submit"]:hover {
+opacity:0.8;
+background:#e50012;
+}
+
+textarea , input[type="date"] {
+font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP",'Roboto',"ヒラギノ角ゴ ProN","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","游ゴシック体",Yu Gothic,YuGothic,"游ゴシック Medium","Yu Gothic Medium","メイリオ", Meiryo,"Helvetica Neue", HelveticaNeue, Helvetica,Arial,"Segoe UI",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+::placeholder {
+color:#b4b4b4;
+}
+
+
+
+/*ANIMATION*/
+@keyframes hover {
+0%{opacity:1;}
+100%{opacity:0.7;}
+}
+
+@keyframes circle1 {
+0%{opacity:0;}
+50%{opacity:0.08;}
+100%{opacity:0; transform:scale(4);}
+}
