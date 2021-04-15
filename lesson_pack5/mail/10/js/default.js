@@ -22,29 +22,3 @@ $(function() {
         }
     });
 });
-
-
-//CTA
-$(function() {
-    var topBtn = $('.fixed_cta');    
-     $(window).scroll(function () {
-        if ($(this).scrollTop() > 4500) {
-            topBtn.addClass('cta_on');
-        } else {
-            topBtn.removeClass('cta_on');
-        }
-    });
-});
-
-
-//CTA
-$(function() {
-    var topBtn = $('.sp_cta');    
-     $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            topBtn.addClass('sp_cta_on');
-        } else {
-            topBtn.removeClass('sp_cta_on');
-        }
-    });
-});

@@ -29,5 +29,17 @@ $(function() {
 			$(this).stop().addClass('fadeInLeft');
 		} 
 	});
+    
+    $('.inviewfadeInCta').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+		if (isInView) {
+			$(".fixed_cta").stop().addClass('fadeInCta');
+		} 
+	});
+    
+    $('.inviewfadeInSpCta').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+		if (isInView) {
+			$(".sp_cta").stop().addClass('sp_cta_on');
+		} 
+	});
 
 });

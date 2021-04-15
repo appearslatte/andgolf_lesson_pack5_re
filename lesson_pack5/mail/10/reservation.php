@@ -265,7 +265,7 @@ function finish_page()
 	$libForm->clearSession();
 	
 	// リダイレクト
-	redirect_url("https://andgolf.jp/lp/lesson_pack5/thanks/");
+	redirect_url("https://cart.andgolf.jp/cart/88");
 	
 	// // html出力
 	// $context = array();

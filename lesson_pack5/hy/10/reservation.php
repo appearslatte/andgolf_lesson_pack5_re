@@ -252,14 +252,14 @@ function finish_page()
 		);
 	}
 
-	// メール送信（確認メール）
-	// $libForm->sendMail(
-	// 	$libForm->formDatas->{$_conf['mail_email_col']}->value,		// to
-	// 	$_conf['mail_kakunin_from'],								// from
-	// 	$_conf['mail_kakunin_fromname'],							// fromname
-	// 	$_conf['mail_kakunin_sub'],									// sub
-	// 	body_kakunin($libForm->formDatas)							// body
-	// );
+    // メール送信（確認メール）
+	 $libForm->sendMail(
+	 	$libForm->formDatas->{$_conf['mail_email_col']}->value,		// to
+	 	$_conf['mail_kakunin_from'],								// from
+	 	$_conf['mail_kakunin_fromname'],							// fromname
+	 	$_conf['mail_kakunin_sub'],									// sub
+	 	body_kakunin($libForm->formDatas)							// body
+	 );
 
 	// セッションクリア
 	$libForm->clearSession();
